@@ -102,5 +102,4 @@ def delete_enrollment(enrollment_id: str):
     if not enrollment:
         raise HTTPException(status_code=404, detail="Enrollment not found")
     enrollments.remove(enrollment)
-    return {"message": "Enrollment deleted successfully"}
     

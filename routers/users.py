@@ -9,7 +9,7 @@ def find_user_by_id(user_id: str):
     for user in users:
         if user.id == user_id:
             return user
-        return None
+    return None
 
 @router.get("/", status_code=status.HTTP_200_OK)
 def get_users():
@@ -53,10 +53,9 @@ def deactivate_user(user_id: str):
     user.is_active = False
     return {"message": "User deactivated successfully", "user": user}
 
-@router.delete("/{user_id}", status_code=status.HTTP_200_OK)
+@router.delete("/{user_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_user(user_id: str):
     user = find_user_by_id(user_id)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     users.remove(user)
-    return {"message": "User deleted successfully"}

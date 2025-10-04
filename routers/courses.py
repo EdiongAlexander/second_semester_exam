@@ -33,12 +33,7 @@ def get_users_enrolled_in_course(course_id: str):
 
     return {"message": "Users fetched successully", "users": enrolled_users}
 
-    
-    
-
-
-    
-
+   
 @router.post("/", status_code=status.HTTP_201_CREATED)
 def create_course(course_in: CreateCourse):
     course = Course(

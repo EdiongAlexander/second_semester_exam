@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from second_semester_exam.routers.users import router as users_router
-from second_semester_exam.routers.courses import router as courses_router
-from second_semester_exam.routers.enrollments import router as enrollments_router
+from routers.users import router as users_router
+from routers.courses import router as courses_router
+from routers.enrollments import router as enrollments_router
 
 
 

@@ -1,6 +1,6 @@
 from fastapi import HTTPException, status
-from second_semester_exam.schemas.enrollment_schema import Enrollment, CreateEnrollment, UpdateEnrollment
-from second_semester_exam.database import users, courses, enrollments
+from schemas.enrollment_schema import Enrollment, CreateEnrollment, UpdateEnrollment
+from database import users, courses, enrollments
 from uuid import uuid4
 from datetime import date
 

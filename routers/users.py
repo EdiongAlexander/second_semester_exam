@@ -1,6 +1,6 @@
 from fastapi import APIRouter, status
-from second_semester_exam.schemas.user_schema import CreateUser, UpdateUser
-from second_semester_exam.services import user_service
+from schemas.user_schema import CreateUser, UpdateUser
+from services import user_service
 
 router = APIRouter()
 

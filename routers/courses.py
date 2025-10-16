@@ -1,6 +1,6 @@
 from fastapi import APIRouter, status
-from second_semester_exam.schemas.course_schema import CreateCourse, UpdateCourse
-from second_semester_exam.services.course_service import (
+from schemas.course_schema import CreateCourse, UpdateCourse
+from services.course_service import (
     get_courses,
     get_course_by_id,
     get_users_enrolled_in_course,

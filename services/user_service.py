@@ -1,6 +1,6 @@
 from fastapi import HTTPException
-from second_semester_exam.schemas.user_schema import User, CreateUser, UpdateUser
-from second_semester_exam.database import users
+from schemas.user_schema import User, CreateUser, UpdateUser
+from database import users
 from uuid import uuid4
 
 

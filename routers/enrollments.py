@@ -1,6 +1,6 @@
 from fastapi import APIRouter, status
-from second_semester_exam.schemas.enrollment_schema import CreateEnrollment, UpdateEnrollment
-from second_semester_exam.services.enrollment_service import (
+from schemas.enrollment_schema import CreateEnrollment, UpdateEnrollment
+from services.enrollment_service import (
     get_enrollments,
     get_enrollment_by_id,
     get_enrollments_by_user_id,

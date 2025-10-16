@@ -1,3 +1,3 @@
-from second_semester_exam.schemas.course_schema import Course
+from schemas.course_schema import Course
 
 courses: list[Course] = []
